@@ -11,8 +11,8 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '1200px',
-        height: '1200px',
+        padding: '50px',
+        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
