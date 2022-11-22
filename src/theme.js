@@ -1,11 +1,11 @@
 export const theme = {
   colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#07c',
-    secondary: '#05a',
-    accent: '#609',
-    muted: '#f6f6f6',
+    black: '#000',
+    white: '#fff',
+    darkGray: '#A9A9A9',
+    dimGray: '#696969',
+    gray: '#808080',
+    lightGray: '#d3d3d32e',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
@@ -14,11 +14,11 @@ export const theme = {
     monospace: 'Menlo, monospace',
   },
   fontSizes: {
-    xs: '12px',
-    s: '14px',
-    m: '16px',
-    l: '32px',
-    xl: '64px',
+    xs: '18px',
+    s: '20px',
+    m: '24px',
+    l: '28px',
+    xl: '36px',
   },
   fontWeights: {
     body: 400,
