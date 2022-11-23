@@ -5,7 +5,7 @@ export const ProfileCard = styled.div`
 
   width: 250px;
   height: auto;
-  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.black}`};
+  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   justify-content: content;
   padding-top: ${p => p.theme.space[6]}px;
 `;
@@ -45,8 +45,9 @@ export const Location = styled.p`
 `;
 
 export const StatsList = styled.ul`
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
+  align-items: center;
 
   border-top: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   margin-top: ${p => p.theme.space[6]}px;
@@ -55,8 +56,7 @@ export const StatsList = styled.ul`
 `;
 
 export const StatsListItem = styled.li`
-  width: 60px;
-  flex-wrap: wrap;
+  width: 100%;
   text-align: center;
   flex-direction: column;
   justify-content: center;

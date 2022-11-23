@@ -4,7 +4,7 @@ export const Section = styled.section`
   display: block;
   margin-left: ${p => p.theme.space[5]}px;
   margin-top: ${p => p.theme.space[5]}px;
-  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.black}`};
+  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   text-align: center;
   width: 350px;
   height: auto;
@@ -12,22 +12,32 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   text-align: center;
+  text-transform: uppercase;
   padding: ${p => p.theme.space[5]}px;
   font-size: ${p => p.theme.fontSizes.l};
-  border-bottom: ${p => `${p.theme.borders.normal} ${p.theme.colors.black}`};
+  border-bottom: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
+  color: ${p => p.theme.colors.dimGray};
 `;
+
 export const StatList = styled.ul`
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
+  align-items: center;
 `;
+
 export const StatListItem = styled.li`
-  width: 45px;
+  width: 100%;
   text-align: center;
   flex-direction: column;
   display: flex;
-  border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.black}`};
+
   padding: ${p => p.theme.space[3]}px;
   gap: ${p => p.theme.space[3]}px;
+  color: ${p => p.theme.colors.white};
+  background-color: ${getRandomHexColor};
+
+  border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
+
   &:first-child {
     border-left: none;
   }
@@ -40,3 +50,7 @@ export const Label = styled.span`
 export const Percentage = styled.span`
   font-size: ${p => p.theme.fontSizes.l};
 `;
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
