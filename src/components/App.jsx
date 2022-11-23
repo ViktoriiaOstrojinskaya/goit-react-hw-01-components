@@ -1,3 +1,4 @@
+import { MainPage } from './App.styled';
 import { Profile } from 'components/Profile/Profile';
 import user from '../user.json';
 import { Statistics } from 'components/Statistics/Statistics';
@@ -9,17 +10,7 @@ import transactions from '../transactions.json';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        padding: '40px',
-        // height: '100vh',
-        // display: 'flex',
-        // justifyContent: 'center',
-        // alignItems: 'center',
-        // fontSize: 40,
-        // color: '#010101',
-      }}
-    >
+    <MainPage>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -31,10 +22,6 @@ export const App = () => {
       <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </MainPage>
   );
 };
-
-// App.PropTypes = {
-//   Profile: PropTypes.string,
-// };

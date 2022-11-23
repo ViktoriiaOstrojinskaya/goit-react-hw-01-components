@@ -24,15 +24,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <StatsList>
         <StatsListItem>
-          <Label>Followers</Label>
+          <span>Followers</span>
           <Quantity>{stats.followers}</Quantity>
         </StatsListItem>
         <StatsListItem>
-          <Label>Views</Label>
+          <span>Views</span>
           <Quantity>{stats.views}</Quantity>
         </StatsListItem>
         <StatsListItem>
-          <Label>Likes</Label>
+          <span>Likes</span>
           <Quantity>{stats.likes}</Quantity>
         </StatsListItem>
       </StatsList>

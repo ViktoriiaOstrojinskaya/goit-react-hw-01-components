@@ -1,9 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ProfileCard = styled.div`
-  margin-left: ${p => p.theme.space[5]}px;
-
-  width: 250px;
+  width: 300px;
   height: auto;
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   justify-content: content;
@@ -32,6 +30,7 @@ export const Avatar = styled.img`
 export const Username = styled.p`
   font-size: ${p => p.theme.fontSizes.l};
   margin-top: ${p => p.theme.space[5]}px;
+  font-weight: ${p => p.theme.fontWeights.heading};
 `;
 
 export const Tag = styled.p`
@@ -51,7 +50,7 @@ export const StatsList = styled.ul`
   align-items: center;
 
   border-top: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
-  margin-top: ${p => p.theme.space[6]}px;
+  margin-top: ${p => p.theme.space[5]}px;
   background: ${p => p.theme.colors.rosyBrown};
   color: ${p => p.theme.colors.white};
   font-size: ${p => p.theme.fontSizes.s};
@@ -65,7 +64,7 @@ export const StatsListItem = styled.li`
   align-content: center;
   display: flex;
   gap: ${p => p.theme.space[3]}px;
-  padding: ${p => p.theme.space[3]}px;
+  padding: ${p => p.theme.space[4]}px;
   font-size: ${p => p.theme.fontSizes.xs};
   border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   &:first-child {
@@ -73,9 +72,7 @@ export const StatsListItem = styled.li`
   }
 `;
 
-export const Label = styled.span``;
-
 export const Quantity = styled.span`
-  font-size: ${p => p.theme.fontSizes.s};
-  font-weight: 700;
+  font-size: ${p => p.theme.fontSizes.m};
+  font-weight: ${p => p.theme.fontWeights.heading};
 `;

@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Table = styled.table`
-  margin-left: ${p => p.theme.space[5]}px;
-  margin-top: ${p => p.theme.space[5]}px;
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   width: 500px;
 `;

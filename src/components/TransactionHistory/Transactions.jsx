@@ -31,5 +31,5 @@ export const TransactionHistory = ({ items }) => {
 };
 
 TransactionHistory.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.shape),
+  items: PropTypes.arrayOf(PropTypes.shape),
 };

@@ -1,13 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-  display: block;
-  margin-left: ${p => p.theme.space[5]}px;
-  margin-top: ${p => p.theme.space[5]}px;
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
-  text-align: center;
   width: 350px;
-  height: auto;
 `;
 
 export const Title = styled.h2`
