@@ -2,10 +2,13 @@ export const theme = {
   colors: {
     black: '#000',
     white: '#fff',
+    snow: '#FFFAFA',
+    blanchedAlmond: '#FDF5E6',
     darkGray: '#A9A9A9',
     dimGray: '#696969',
     gray: '#808080',
     lightGray: '#d3d3d32e',
+    rosyBrown: '#BC8F8F',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

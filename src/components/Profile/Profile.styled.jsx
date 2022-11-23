@@ -8,6 +8,7 @@ export const ProfileCard = styled.div`
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   justify-content: content;
   padding-top: ${p => p.theme.space[6]}px;
+  background: ${p => p.theme.colors.snow};
 `;
 
 export const Description = styled.div`
@@ -15,6 +16,7 @@ export const Description = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: ${p => p.theme.colors.gray};
 `;
 
 export const Avatar = styled.img`
@@ -24,7 +26,7 @@ export const Avatar = styled.img`
   width: 100px;
   border-radius: ${p => p.theme.radii.round};
   padding: ${p => p.theme.space[3]}px;
-  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
+  border: ${p => `${p.theme.borders.normal} ${p.theme.colors.rosyBrown}`};
 `;
 
 export const Username = styled.p`
@@ -34,13 +36,12 @@ export const Username = styled.p`
 
 export const Tag = styled.p`
   font-size: ${p => p.theme.fontSizes.s};
-  color: ${p => p.theme.colors.gray};
+  color: ${p => p.theme.colors.rosyBrown};
   margin-top: ${p => p.theme.space[3]}px;
 `;
 
 export const Location = styled.p`
   font-size: ${p => p.theme.fontSizes.m};
-  color: ${p => p.theme.colors.gray};
   margin-top: ${p => p.theme.space[3]}px;
 `;
 
@@ -51,7 +52,8 @@ export const StatsList = styled.ul`
 
   border-top: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
   margin-top: ${p => p.theme.space[6]}px;
-  background: ${p => p.theme.colors.lightGray};
+  background: ${p => p.theme.colors.rosyBrown};
+  color: ${p => p.theme.colors.white};
   font-size: ${p => p.theme.fontSizes.s};
 `;
 
@@ -62,6 +64,7 @@ export const StatsListItem = styled.li`
   justify-content: center;
   align-content: center;
   display: flex;
+  gap: ${p => p.theme.space[3]}px;
   padding: ${p => p.theme.space[3]}px;
   font-size: ${p => p.theme.fontSizes.xs};
   border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
@@ -70,10 +73,9 @@ export const StatsListItem = styled.li`
   }
 `;
 
-export const Label = styled.span`
-  color: ${p => p.theme.colors.gray};
-`;
+export const Label = styled.span``;
 
 export const Quantity = styled.span`
-  font-weight: 500;
+  font-size: ${p => p.theme.fontSizes.s};
+  font-weight: 700;
 `;

@@ -14,12 +14,22 @@ export const FriendCard = styled.li`
   margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
+const setBgColor = props => {
+  switch (props.isOnline) {
+    case 'true':
+      return 'green';
+    case 'false':
+      return 'red';
+  }
+};
+
 export const Status = styled.span`
   height: 15px;
   width: 15px;
   border-radius: ${p => p.theme.radii.round};
-  background-color: red;
   margin-right: ${p => p.theme.space[3]}px;
+  background-color: yellow;
+  background-color: ${setBgColor};
 `;
 
 export const Avatar = styled.img`
