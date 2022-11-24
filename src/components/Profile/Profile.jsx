@@ -8,7 +8,6 @@ import {
   Tag,
   Location,
   StatsListItem,
-  Label,
   Quantity,
 } from './Profile.styled';
 

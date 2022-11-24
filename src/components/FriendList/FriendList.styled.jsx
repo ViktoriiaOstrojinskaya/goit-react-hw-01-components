@@ -22,10 +22,9 @@ export const Status = styled.span`
 `;
 
 export const Avatar = styled.img`
-  object-fit: contain;
   margin-right: ${p => p.theme.space[5]}px;
   padding: ${p => p.theme.space[3]}px;
-  border-radius: ${p => p.theme.radii.round};
+  border-radius: ${p => p.theme.radii.normal};
   border: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
 `;
 
