@@ -6,11 +6,11 @@ export const Table = styled.table`
 `;
 
 export const TableTableRow = styled.tr`
-  &:nth-child(odd) {
+  &:nth-of-type(odd) {
     background: ${p => p.theme.colors.lightGray};
   }
 
-  &:nth-child(even) {
+  &:nth-of-type(even) {
     background: ${p => p.theme.colors.blanchedAlmond};
   }
 `;

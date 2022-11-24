@@ -67,7 +67,7 @@ export const StatsListItem = styled.li`
   padding: ${p => p.theme.space[4]}px;
   font-size: ${p => p.theme.fontSizes.xs};
   border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
-  &:first-child {
+  &:first-of-type {
     border-left: none;
   }
 `;

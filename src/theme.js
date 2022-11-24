@@ -9,6 +9,8 @@ export const theme = {
     gray: '#808080',
     lightGray: '#d3d3d32e',
     rosyBrown: '#BC8F8F',
+    green: '#008000',
+    red: '#FF0000',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

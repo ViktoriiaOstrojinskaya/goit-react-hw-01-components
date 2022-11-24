@@ -33,7 +33,7 @@ export const StatListItem = styled.li`
 
   border-left: ${p => `${p.theme.borders.normal} ${p.theme.colors.dimGray}`};
 
-  &:first-child {
+  &:first-of-type {
     border-left: none;
   }
 `;
